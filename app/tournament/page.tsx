@@ -47,6 +47,24 @@ export default function TournamentBan() {
         { id: "151_myrtle", name: "Fang", rarity: 3, class: 1 },
         { id: "151_myrtle", name: "Yato", rarity: 2, class: 1 },
         { id: "151_myrtle", name: "Confess-47", rarity: 1, class: 1 },
+        { id: "151_myrtle", name: "Vulpisfoglia", rarity: 6, class: 1 },
+        { id: "151_myrtle", name: "Texas", rarity: 5, class: 1 },
+        { id: "151_myrtle", name: "Courier", rarity: 4, class: 1 },
+        { id: "151_myrtle", name: "Fang", rarity: 3, class: 1 },
+        { id: "151_myrtle", name: "Yato", rarity: 2, class: 1 },
+        { id: "151_myrtle", name: "Confess-47", rarity: 1, class: 1 },
+        { id: "151_myrtle", name: "Vulpisfoglia", rarity: 6, class: 1 },
+        { id: "151_myrtle", name: "Texas", rarity: 5, class: 1 },
+        { id: "151_myrtle", name: "Courier", rarity: 4, class: 1 },
+        { id: "151_myrtle", name: "Fang", rarity: 3, class: 1 },
+        { id: "151_myrtle", name: "Yato", rarity: 2, class: 1 },
+        { id: "151_myrtle", name: "Confess-47", rarity: 1, class: 1 },
+        { id: "151_myrtle", name: "Vulpisfoglia", rarity: 6, class: 1 },
+        { id: "151_myrtle", name: "Texas", rarity: 5, class: 1 },
+        { id: "151_myrtle", name: "Courier", rarity: 4, class: 1 },
+        { id: "151_myrtle", name: "Fang", rarity: 3, class: 1 },
+        { id: "151_myrtle", name: "Yato", rarity: 2, class: 1 },
+        { id: "151_myrtle", name: "Confess-47", rarity: 1, class: 1 },
     ];
     return (
         <div className={"block h-screen w-screen"}>
@@ -146,15 +164,14 @@ export default function TournamentBan() {
                         </div>
                     </div>
                 </div>
-                <div className={"mt-2 grid w-full grid-cols-5"}>
-                    {OperatorList.map((operator) => {
-                        return (
-                            <OperatorIcon
-                                key={operator.name}
-                                operator={operator}
-                            />
-                        );
-                    })}
+                <div className={"mt-2 w-full max-h-[35vh] overflow-auto"}>
+                    <div className="flex flex-wrap">
+                        {OperatorList.map((operator, index) => (
+                            <div key={index} className="w-1/4 flex justify-center">
+                            <OperatorIcon operator={operator} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

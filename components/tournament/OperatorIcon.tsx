@@ -32,18 +32,18 @@ function OperatorIcon({ operator }: { operator: Operator }) {
                 className={`flex h-15 w-14 items-center justify-center`}
                 style={{
                     background: `linear-gradient(
-                        to top,
-                        ${rarityColor} 0%,
-                        ${rarityColor}70 50%,
-                        ${rarityColor}00 100%
-                    )`,
-                    borderBottom: `4px solid ${rarityColor}`,
+            to top,
+            ${rarityColor} 0%,
+            ${rarityColor}70 50%,
+            ${rarityColor}00 100%
+          )`,
+                    borderBottom: `2px solid ${rarityColor}`,
                 }}
             >
                 <Image
                     src={`/operators/char_${operator.id}.png`}
-                    width={48}
-                    height={48}
+                    width={56}
+                    height={56}
                     alt={operator.name}
                     className={"object-contain"}
                 />
